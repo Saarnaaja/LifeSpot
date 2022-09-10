@@ -10,14 +10,19 @@
     <meta charset="UTF-8">
     <title>LifeSpot</title>
     <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../Static/JS/index.js"></script>
+    <script type="text/javascript" src="../Static/JS/filterContent.js"></script>
+    <script>
+        //sessionHandler();
+    </script>
 </head>
 <body>
     <div>
         <p>
             Поиск:
-            <input class="findBox" contextmenu="123">
+            <input class="findBox" type="text" oninput="filterContent(document.getElementsByTagName('input')[0].value.toLowerCase())" size=50%>
         </p>
-</div>
+    </div>
     <div class="bordered">
         <div class="video-container">
             <iframe width="500" height="315" src="https://www.youtube.com/embed/srlpC5tmhYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -34,14 +39,5 @@
     </div>
 </body>
 </html>
-
-<footer>
-    <p>LifeSpot - все права защищены</p>
-    <p>Связаться с нами: contact@lifespot.ru</p>
-</footer>
-<aside id="sidebar">
-    <div class="navbar">
-        <a href="/"><p>Все трансляции</p></a>
-        <a href="/"><p>О проекте</p></a>
-    </div>
-</aside>
+<!--SIDEBAR-->
+<!--FOOTER-->
